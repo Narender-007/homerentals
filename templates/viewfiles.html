@@ -1,0 +1,24 @@
+{% load static %}
+
+<div align="center">
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Description</th>
+            <th>Image</th>
+            <th>Download</th>
+        </tr>
+
+        {% for file in files %}
+            <tr>
+                <td>{{ file.id }}</td>
+                <td>{{ file.description}}</td>
+                <td> <img src="{% static ''%}{{ file.myfile }}" height="100" width="100"></td>
+                <td><a href="{% static ''%}{{ file.myfile }}" download>download</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+
+
+</div>

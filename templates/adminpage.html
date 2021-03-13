@@ -1,0 +1,526 @@
+{% load static %}
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<title>Hyderabad Rentals</title>
+<style type="text/css">
+html {
+	height: 100%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: normal .80em 'trebuchet ms', Calibri, sans-serif;
+	background: cornsilk;
+	color: #777;
+}
+
+p {
+	padding: 0 0 20px 0;
+	line-height: 2.0em;
+}
+
+img {
+	border: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font: normal 180% 'century gothic', Arial, sans-serif;
+	color: #43423F;
+	margin: 0 0 15px 0;
+	padding: 15px 0 5px 0;
+}
+
+h2 {
+	font: normal 175% 'century gothic', arial, sans-serif;
+	color: #1293EE;
+}
+
+h4, h5, h6 {
+	margin: 0;
+	padding: 0 0 5px 0;
+	font: normal 120% arial, sans-serif;
+	color: #1293EE;
+}
+
+h5, h6 {
+	font: italic 95% arial, sans-serif;
+	padding: 0 0 15px 0;
+	color: #000;
+}
+
+h6 {
+	color: #362C20;
+}
+
+a, a:hover {
+	outline: none;
+	text-decoration: underline;
+	color: #CC0000;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.left {
+	float: left;
+	width: auto;
+	margin-right: 10px;
+}
+
+p{
+
+    color: teal;
+    text-align: center;
+    font-size: x-large;
+    font-family: "Calisto MT";
+
+
+
+
+}
+
+.right {
+	float: right;
+	width: auto;
+	margin-left: 10px;
+}
+
+.center {
+	display: block;
+	text-align: center;
+	margin: 20px auto;
+}
+
+blockquote {
+	margin: 20px 0;
+	padding: 10px 20px 0 20px;
+	border: 1px solid #E5E5DB;
+	background: #FAF700;
+}
+
+ul {
+	margin: 2px 0 22px 17px;
+}
+
+ul li {
+	list-style-type: circle;
+	margin: 0 0 6px 0;
+	padding: 0 0 4px 5px;
+}
+
+ol {
+	margin: 8px 0 22px 20px;
+}
+
+ol li {
+	margin: 0 0 11px 0;
+}
+
+#main, #logo, #menubar, #site_content, #footer {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#header {
+	background: aliceblue;
+	height: 160px;
+}
+
+#header2 {
+	background: #A80000;
+	height: 240px;
+    float: right;
+}
+
+
+#logo {
+	width: 1280px;
+	position: relative;
+	height: 80px;
+	background: aliceblue url(logo.png) no-repeat;
+    text-align: center;
+    font-size: medium;
+    font-family: "Times New Roman";
+
+}
+
+#logo2 {
+	width: 1080px;
+	position: relative;
+	height: 40px;
+	background: aliceblue url(logo.png) no-repeat;
+}
+
+#logo #logo_text {
+	position: absolute;
+	top: 20px;
+	left: 0;
+    float: right;
+}
+.dropbtn{
+    background-color: #29425E;
+    color: #D9D5CF;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    float: right;
+
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+    float: left;
+
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #F0EFE2;
+    min-width: 160px;
+    box-shadow: rgba(0,0,0,0,2);
+    z-index: 1;
+
+}
+.dropdown-content a{
+    color: coral;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+}
+.dropdown-content a:hover
+{background-color:#7D0F0F}
+
+.dropdown:hover .dropdown-content
+{
+    display: block;
+}
+
+#logo2 #logo_text {
+	position: absolute;
+	top: 20px;
+	left: 0;
+}
+
+#logo h1, #logo h2 {
+	font: normal 300% 'century gothic', arial, sans-serif;
+	border-bottom: 0;
+	text-transform: none;
+	margin: 0;
+}
+
+#logo_text h1, #logo_text h1 a, #logo_text h1 a:hover {
+	padding: 22px 0 0 0;
+	color: #FAF700;
+	letter-spacing: 0.1em;
+	text-decoration: none;
+}
+
+#logo_text h1 a .logo_colour {
+	color: #FAF700;
+}
+
+#logo_text h2 {
+	font-size: 100%;
+	padding: 4px 0 0 0;
+	color: #DDD;
+}
+
+#menubar {
+	width: 1280px;
+	height: 35px;
+	padding: 0;
+	background: aliceblue url(menu.png) repeat-x;
+    font-size: large;
+    font: large;
+    font-family: "Agency FB";
+    text-align: center;
+
+}
+
+ul#menu, ul#menu li {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+ul#menu li {
+	list-style:  none;
+    text-align: center;
+}
+
+ul#menu li a {
+	letter-spacing: 0.1em;
+	font: normal 100% 'lucida sans unicode', arial, sans-serif;
+	display: block;
+	float: right;
+	height: 20px;
+	padding: 5px 6px 7px 8px;
+	text-align: center;
+	color: #CC0000;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: transparent;
+    font-size: medium;
+
+}
+
+ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover {
+	color: #FFF;
+	background: #451C1B url(menu_select.png) repeat-x;
+}
+
+#site_content {
+	width: 750px;
+	overflow: hidden;
+	margin: 1 auto 0 auto;
+	padding: 20px 24px 20px 37px;
+	background: #FFFFFF url(content.png) repeat-y;
+
+}
+#site_content1 {
+	width: 120px;
+	overflow: hidden;
+	margin: 20px auto 20px auto;
+	padding: 20px 24px 20px 37px;
+	background: #E5E5DB url(content.png) repeat-y;
+    float: right;
+    border-bottom-left-radius: initial;
+
+
+}
+#site_content2 {
+	width: 120px;
+    overflow: hidden;
+	margin: 20px auto 20px auto;
+	padding: 20px 24px 20px 37px;
+	background: #E5E5DB url(content.png) repeat-y;
+    float: left;
+
+
+
+}
+
+
+.sidebar {
+	float: right;
+	width: 190px;
+	padding: 0 15px 20px 15px;
+}
+
+.sidebar ul {
+	width: 178px;
+	padding: 4px 0 0 0;
+	margin: 4px 0 30px 0;
+}
+
+.sidebar li {
+	list-style: none;
+	padding: 0 0 7px 0;
+}
+
+.sidebar li a, .sidebar li a:hover {
+	padding: 0 0 0 40px;
+	display: block;
+	background: transparent url(link.png) no-repeat left center;
+}
+
+.sidebar li a.selected {
+	color: #444;
+	text-decoration: none;
+}
+
+#content {
+	text-align: left;
+	width: 595px;
+	padding: 0;
+}
+
+#content ul {
+	margin: 2px 0 22px 0px;
+}
+
+#content ul li {
+	list-style-type: none;
+	background: url(bullet.png) no-repeat;
+	margin: 0 0 6px 0;
+	padding: 0 0 4px 25px;
+	line-height: 1.5em;
+}
+
+#footer {
+	width: 1280px;
+	font: normal 100% 'lucida sans unicode', arial, sans-serif;
+	height: 140px;
+	padding: 24px 0 5px 0;
+	text-align: center;
+	background: #29425E url(footer.png) repeat-x;
+	color: #FFF;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+#footer a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+#footer a:hover {
+	color: #FFF;
+	text-decoration: underline;
+}
+
+.search {
+	color: #5D5D5D;
+	border: 1px solid #BBB;
+	width: 134px;
+	padding: 4px;
+	font: 100% arial, sans-serif;
+}
+
+#colours {
+	height: 0px;
+	text-align: right;
+	padding: 66px 16px 0px 300px;
+}
+
+.form_settings {
+	margin: 15px 0 0 0;
+    float: right;
+}
+
+.form_settings p {
+	padding: 0 0 4px 0;
+}
+
+.form_settings span {
+	float: left;
+	width: 80px;
+	text-align: left;
+}
+
+.form_settings input, .form_settings textarea {
+	padding: 2px;
+	width: 300px;
+	font: 100% arial;
+    float: right;
+
+	background: #FFF;
+	color: #47433F;
+}
+
+.form_settings .submit {
+	font: 100% arial;
+	border: 1px solid;
+	width: 99px;
+	height: 33px;
+
+	cursor: pointer;
+	background: #7D0F0F;
+	color: #FFF;
+    float: right;
+}
+
+.form_settings textarea, .form_settings select {
+	font: 100% arial;
+	width: 99px;
+    float: right;
+}
+
+.form_settings select {
+	width: 110px;
+}
+
+.form_settings .checkbox {
+	margin: 4px 0;
+	padding: 0;
+	width: 3px;
+	border: 0;
+	background: none;
+}
+
+.separator {
+	width: 100%;
+	height: 0;
+	border-top: 1px solid #D9D5CF;
+	border-bottom: 1px solid #FFF;
+	margin: 0 0 20px 0;
+}
+
+#table {
+	margin: 10px 0 30px 0;
+}
+
+table tr th, table tr td {
+	background: #3B3B3B;
+	color: #FFF;
+	padding: 7px 4px;
+	text-align: left;
+}
+
+table tr td {
+	background: #F0EFE2;
+	color: #47433F;
+	border-top: 1px solid #FFF;
+}
+</style>
+</head>
+
+<body>
+<div id="main">
+    <div id="header" style="text-align: center;">
+        <div id="logo">
+            <h1 style="text-align: center">Welcome to Hyderabad Rentals</h1>
+
+            <div id="menubar" style="text-align: center">
+
+				    <ul id="menu" style="text-align: center;">
+                        <li>
+                            <b><a href="/home">home</a></b>
+                        </li>
+                        <li>
+
+                    </ul>
+                </div>
+
+            <div id="site_content">
+                <div id="content"><br>
+                    <table border="0">
+
+
+                        <h1 style="font-size: 40px; color: palevioletred; text-align: center; ">Welcome to Hyderabad Rentals </h1>
+                        <h1 style="font-size: 40px; color: darkblue; ">Name:{{users.name}}</h1><br>
+                        <h1 style="font-size: 40px; color: darkblue; ">Description:{{users.description}}</h1><br>
+                        <h1 style="font-size: 40px; color: red; ">Price:{{users.price}}</h1><br>
+                        <h1 style="font-size: 40px; color: darkblue; ">House Type:{{users.housetype}}</h1><br>
+                        <h1 style="font-size: 40px; color: darkblue; ">Location:{{users.location}}</h1><br>
+                        <img src="{% static ''%}{{ users.image }}" height="100" width="100">
+
+                    </table>
+                </div>
+            </div>
+
+        <div id="footer">
+            <h2>
+                    Share Us On
+            </h2>
+                <p>
+                    <u ><a href="www.facebook.com/login">Facebook</a></u>
+                    <u><a href="www.Twitter.com/login">Twitter</a></u>
+                    <u><a href="www.Instagram.com/login">Instagram</a></u>
+                    <u><a href="www.gmail.com/login">gmail</a></u>
+                </p>
+        </div>
+</div>
+</div>
+</body>
+</html>
